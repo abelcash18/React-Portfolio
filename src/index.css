@@ -1,0 +1,217 @@
+@import "tailwindcss";
+
+:root {
+  --primary-font: 'Ubuntu', sans-serif;
+  --secondary-font: 'Urbanist', sans-serif;
+  --primary-color: #FD853A;
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+}
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: white;
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--primary-color);
+  border-radius: 10px;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font) !important;
+}
+body{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.navBar{
+  margin: 20px auto 0;
+  padding: 10px 15px;
+}
+
+.link.active{
+  background-color: var(--primary-color);
+  border-radius: 60px;
+  padding: 10px 40px;
+}
+.link.active:hover{
+  background-color: #fa7623;
+  color: white;
+}
+.link:hover{
+  color: var(--primary-color);
+  transition: 0.2s;
+}
+.helloText{
+  padding: 12px 25px;
+}
+ .heroSection {
+  margin: 0 0;
+  padding: 20px 5% 0;
+  background-size: cover;
+  transition: background 0.1s ease;
+  position: relative;
+  overflow: hidden;
+}
+.heroSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; /* adjust as needed */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  z-index: -1;
+  pointer-events: none;
+}
+
+.heroImg{
+  margin-top: 5%;
+}
+.actionBtn button{
+  padding: 10px 20px;
+}
+.cta{
+  padding: 5px;
+}
+.servicesSection{
+  padding: 4% 7%;
+  margin: 0 0 20px;
+  background: linear-gradient(to right, rgba(23, 23, 23, 0.50), rgba(23, 23, 23, 0.50)), url(./assets/bgPattern.png) center center no-repeat;
+  background-size: cover;
+  position: relative;
+
+
+  &::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url(./assets/flower.png) center center no-repeat;
+    border-radius: 50px;
+    background-size: fill;
+    opacity: 0.7;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+.testimoniesSection{
+  padding: 5% 7%;
+  margin: 0 0 20px;
+  background: linear-gradient(to right, rgba(23, 23, 23, 0.50), rgba(23, 23, 23, 0.50)), url(./assets/bgPattern.png) center center no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 30px;
+}
+.beforeBg{
+  margin-top: 30px;
+
+  &::before{
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    background-color: #9E9D9D;
+    z-index: -1;
+    top: -15px;
+    left: 10%;
+    border-radius: 35px;
+  }
+  &::after{
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 50%;
+    background-color: #757575;
+    z-index: -2;
+    top: -50px;
+    left: 20%;
+    border-radius: 35px;
+  }
+}
+
+.workExperience{
+  padding: 3% 7%;
+}
+.centerImg::before{
+  content: '';
+  position: absolute;
+  width: 0px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  border-left: 3px dotted #344054;
+}
+.hireMe{
+  padding: 3% 7%;
+  margin-bottom: 20px;
+}
+.homePortfolio{
+  padding: 3% 7%;
+}
+
+@media screen and (max-width: 768px) {
+  ::-webkit-scrollbar{
+    display: none;
+  }
+  html, body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  .heroSection{
+    padding: 4% 5% 0;
+  }
+  .homePortfolio{
+    padding: 3% 4%;
+  }
+  .profilePic{
+    margin-top: 40px;
+  }
+  .workEx{
+    margin-left: 13% !important;
+    padding: 0 20px 0 0;
+  }
+  .leftLink, .rightLink{
+    display: none !important;
+  }
+  .navBar{
+    padding: 10px 20px;
+  }
+  .testimonyCard{
+    animation: none !important;
+  }
+  .awesome{
+    padding: 5% 2%;
+  }
+}
+.testimonyCard{
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+  animation: animateCard 10s linear infinite;
+
+  &:hover{
+    animation-play-state: paused;
+  }
+}
+@keyframes animateCard {
+  0%{transform: translateX(10%);}
+  100%{transform: translateX(-100%);}
+}
+.navigate ul li{
+  padding: 5px 0;
+}
+
+
+.mobile-link{
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s ease-in-out;
+}
+.open{
+  transform: scaleY(1);
+  animation: transform 0.3s ease-in-out;
+}
