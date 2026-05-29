@@ -51,13 +51,13 @@ const Navbar = () => {
         </div>
           <div onClick={toggleMenu} className='cursor-pointer md:hidden'>
             {!isOpen ?
-              <span className='font-bold text-3xl text-[#FD853A]'>&#9776;</span>
+              <span className='font-bold text-3xl text-[#0099FF]'>&#9776;</span>
               :
-              <span className='font-bold text-4xl text-[#FD853A]'>&times;</span>
+              <span className='font-bold text-4xl text-[#0099FF]'>&times;</span>
             }
           </div>
       </div>
-      <div className={`${isOpen ? 'open' : 'overflow-hidden navbarMobile'} absolute mobile-link md:hidden bg-[#fd853aab] backdrop-blur-md shadow-md rounded-[10px] z-10 top-[120%] left-0 block w-full`}>
+      <div className={`${isOpen ? 'open' : 'overflow-hidden navbarMobile'} absolute mobile-link md:hidden bg-[#0099ffab] backdrop-blur-md shadow-md rounded-[10px] z-10 top-[120%] left-0 block w-full`}>
           <div className='flex flex-col gap-3 p-5'>
             <NavLink className={({ isActive }) => isActive ? 'link active' : 'link'} to='/'>Home</NavLink>
             <NavLink className={({ isActive }) => isActive ? 'link active' : 'link'} to='/about'>About</NavLink>

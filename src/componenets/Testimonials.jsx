@@ -25,7 +25,7 @@ const Testimonials = () => {
           <div className='testimoniesSection'>
             <div className='flex flex-col gap-[4em] justify-center items-center text-white'>
               <div className='text-center flex flex-col gap-4 justify-center items-center'>
-                <h1 className='text-4xl md:w-2/4'>Testimonials That Speak to <span className='text-[#FD853A]'>My Results</span></h1>
+                <h1 className='text-4xl md:w-2/4'>Testimonials That Speak to <span className='text-[#0099FF]'>My Results</span></h1>
                 <p className='text-[#F9FAFB] md:w-2/4 text-[15px]'>Every project is a partnership, and these testimonials reflect the passion, trust, and dedication that go into everything I create.
                 </p>
               </div>

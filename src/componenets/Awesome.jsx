@@ -42,7 +42,7 @@ const Awesome = () => {
       className='awesome flex flex-col items-center justify-center'
     >
       <h1 className='text-3xl md:text-4xl font-bold text-center md:w-2/4'>
-        Have an Awsome Project Idea? <span className='text-[#FD853A]'>Let’s Discuss</span>
+        Have an Awsome Project Idea? <span className='text-[#0099FF]'>Let's Discuss</span>
       </h1>
 
       <div style={{ padding: '10px', marginTop: '20px' }} className='border-1 rounded-[60px] border-[#E4E7EC] md:w-2/4'>

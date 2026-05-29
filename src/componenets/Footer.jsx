@@ -39,7 +39,7 @@ const Footer = () => {
           <span>
             <a target='_blank' rel='noopener noreferrer' href="https://wa.me/2349056424816">
               <button
-                className='flex items-center gap-2 bg-[#FD853A] hover:bg-transparent border border-[#FD853A] rounded-[60px] cursor-pointer text-white px-6 py-2.5 transition-all'
+                className='flex items-center gap-2 bg-[#0099FF] hover:bg-transparent border border-[#0099FF] rounded-[60px] cursor-pointer text-white px-6 py-2.5 transition-all'
                 >
                 <span>Hire Me</span>
                 <img width={'17px'} src={Arrow} alt="arrow" />
@@ -60,35 +60,35 @@ const Footer = () => {
               exciting opportunities, freelance work, or even just sharing ideas over coffee (virtual or real ☕).
             </p>
             <div className='socialLink flex gap-3'>
-            <a target='_blank' rel='noopener noreferrer' href="https://www.facebook.com/OkikiolaFakorede01" className='text-3xl text-[#FD853A] transition-all hover:text-[#583c2a]'><FaFacebookSquare /></a>
-            <a target='_blank' rel='noopener noreferrer' href="" className='text-3xl text-[#FD853A] transition-all hover:text-[#583c2a]'><FaLinkedin /></a>
-            <a target='_blank' rel='noopener noreferrer' href="https://x.com/conquer_create" className='text-3xl text-[#FD853A] transition-all hover:text-[#583c2a]'><FaSquareXTwitter /></a>
-            <a target='_blank' rel='noopener noreferrer' href="https://github.com/Holuwaconquer" className='text-3xl text-[#FD853A] transition-all hover:text-[#583c2a]'><FaGithubSquare /></a>
+            <a target='_blank' rel='noopener noreferrer' href="https://www.facebook.com/OkikiolaFakorede01" className='text-3xl text-[#0099FF] transition-all hover:text-[#0077CC]'><FaFacebookSquare /></a>
+            <a target='_blank' rel='noopener noreferrer' href="" className='text-3xl text-[#0099FF] transition-all hover:text-[#0077CC]'><FaLinkedin /></a>
+            <a target='_blank' rel='noopener noreferrer' href="https://x.com/conquer_create" className='text-3xl text-[#0099FF] transition-all hover:text-[#0077CC]'><FaSquareXTwitter /></a>
+            <a target='_blank' rel='noopener noreferrer' href="https://github.com/Holuwaconquer" className='text-3xl text-[#0099FF] transition-all hover:text-[#0077CC]'><FaGithubSquare /></a>
             </div>
           </div>
 
           <div className='navigate'>
-            <h1 className='font-bold text-2xl text-[#FD853A]'>Navigation</h1>
+            <h1 className='font-bold text-2xl text-[#0099FF]'>Navigation</h1>
             <ul style={{ marginTop: '10px' }}>
-              <li><NavLink to='/' className='hover:text-[#FD853A]'>Home</NavLink></li>
-              <li><NavLink to='about' className='hover:text-[#FD853A]'>About Us</NavLink></li>
-              <li><NavLink to='services' className='hover:text-[#FD853A]'>Service</NavLink></li>
-              <li><NavLink to='resume' className='hover:text-[#FD853A]'>Resume</NavLink></li>
-              <li><NavLink to='project' className='hover:text-[#FD853A]'>Project</NavLink></li>
+              <li><NavLink to='/' className='hover:text-[#0099FF]'>Home</NavLink></li>
+              <li><NavLink to='about' className='hover:text-[#0099FF]'>About Us</NavLink></li>
+              <li><NavLink to='services' className='hover:text-[#0099FF]'>Service</NavLink></li>
+              <li><NavLink to='resume' className='hover:text-[#0099FF]'>Resume</NavLink></li>
+              <li><NavLink to='project' className='hover:text-[#0099FF]'>Project</NavLink></li>
             </ul>
           </div>
 
           <div className='navigate'>
-            <h1 className='font-bold text-2xl text-[#FD853A]'>Contact</h1>
+            <h1 className='font-bold text-2xl text-[#0099FF]'>Contact</h1>
             <div style={{ marginTop: '10px' }}>
               <h1>+2349056424816</h1>
               <h1>josephabel540@gmail.com</h1>
-              <h1><a className='hover:text-[#FD853A]' target='_blank' rel='noopener noreferrer' href="https://github.com/abelcash18">Github Profile</a></h1>
+              <h1><a className='hover:text-[#0099FF]' target='_blank' rel='noopener noreferrer' href="https://github.com/abelcash18">Github Profile</a></h1>
             </div>
           </div>
 
           <div>
-            <h1 className='text-[#FD853A]'>Get the latest information</h1>
+            <h1 className='text-[#0099FF]'>Get the latest information</h1>
             <div style={{ marginTop: '20px' }} className='w-full flex items-center'>
               <input
                 type="text"
@@ -96,7 +96,7 @@ const Footer = () => {
                 className='bg-white text-black focus:outline-0 rounded-bl-[10px] rounded-tl-[10px]'
                 style={{ padding: '10px' }}
               />
-              <button style={{ padding: '10px' }} className='bg-[#FD853A] hover:bg-[hsl(17,98%,61%)] cursor-pointer rounded-br-[10px] rounded-tr-[10px]'>
+              <button style={{ padding: '10px' }} className='bg-[#0099FF] hover:bg-[#0077CC] cursor-pointer rounded-br-[10px] rounded-tr-[10px]'>
                 <img src={Filled} alt="decorative element" />
               </button>
             </div>

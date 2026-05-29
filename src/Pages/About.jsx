@@ -21,11 +21,11 @@ const About = () => {
       viewport={{ once: true, amount: 0.5 }}
     >
     <div className='py-[5%] px-[10%] About flex flex-col gap-4 items-center'>
-      <h1 className='text-4xl font-bold text-center'>About <span className='text-[#FD853A]'>Me</span></h1>
+      <h1 className='text-4xl font-bold text-center'>About <span className='text-[#0099FF]'>Me</span></h1>
 
       <div className='grid md:grid-cols-[1fr_1fr] items-center justify-center md:flex-row gap-4'>
         <div className='w-full flex text-center md:text-left flex-col gap-4'>
-          <h1 className='text-3xl text-[#FD853A] font-bold'>Know who i am</h1>
+          <h1 className='text-3xl text-[#0099FF] font-bold'>Know who i am</h1>
           <h2 className='text-2xl'>My journey in few words</h2>
           <p>
             Hi, I am Joseph Abel Olayinka,  .

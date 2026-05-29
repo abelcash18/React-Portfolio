@@ -21,7 +21,7 @@ const Work = () => {
         >
           <div className='w-full workExperience'>
             <div className='w-full'>
-              <h1 className='text-4xl font-bold text-center'>My <span className='text-[#FD853A]'>Work Experience</span></h1>
+              <h1 className='text-4xl font-bold text-center'>My <span className='text-[#0099FF]'>Work Experience</span></h1>
               <div style={{margin: '3em 0'}} className='workEx flex flex-col gap-5 w-full relative'>
                 {/* first */}
                 <div className='w-full grid md:grid-cols-[1fr_1fr]'>

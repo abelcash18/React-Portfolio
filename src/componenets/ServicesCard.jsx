@@ -25,11 +25,11 @@ const ServicesCard = ({ serviceTitle, servicesImg }) => {
         <h1 className='text-2xl'>{serviceTitle}</h1>
         <div className="group relative flex justify-center items-center text-white font-bold">
           <div className="absolute opacity-0 group-hover:opacity-100 group-hover:-translate-y-[100%] -translate-y-[100%] duration-500 group-hover:delay-500 skew-y-[20deg] group-hover:skew-y-0 shadow-md">
-            <div className="shadow-md bg-[#FD853A] absolute bottom-0 translate-y-1/2 left-1/2 translate-x-full rotate-45 p-1" />
+            <div className="shadow-md bg-[#0099FF] absolute bottom-0 translate-y-1/2 left-1/2 translate-x-full rotate-45 p-1" />
             <div className="rounded-md bg-white group-hover:opacity-0 group-hover:scale-[115%] group-hover:delay-700 duration-500 w-full h-full absolute top-0 left-0">
               <div className="border-b border-r border-white bg-white absolute bottom-0 translate-y-1/2 left-1/2 translate-x-full rotate-45 p-1" /></div>
             </div>
-            <div style={{padding: '10px'}} className="shadow-md flex items-center group-hover:gap-2 bg-gradient-to-br bg-[#FD853A] p-3 rounded-full cursor-pointer duration-300">
+            <div style={{padding: '10px'}} className="shadow-md flex items-center group-hover:gap-2 bg-gradient-to-br bg-[#0099FF] p-3 rounded-full cursor-pointer duration-300">
               <img width={'20px'} src={Arrow} alt="arrow icon" />
               <span className="text-[0px] group-hover:text-sm duration-300">Quote</span>
             </div>

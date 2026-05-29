@@ -10,14 +10,14 @@ const FolioCard = ({ category, title, details, anchor, techStack, image, classNa
         <div className='w-full flex md:gap-[1em] md:items-center'>
           <div>
             <small>{category}</small>
-            <h1 className='font-bold text-3xl text-[#FD853A] mb-2.5'>{title}</h1>
+            <h1 className='font-bold text-3xl text-[#0099FF] mb-2.5'>{title}</h1>
             <p className='text-justify'>
               {details}
             </p>
-            <h1 className='' style={{marginTop: '20px'}}>Tech Stack: <br /> <span className='text-[#FD853A]'>{techStack}</span></h1>
+            <h1 className='' style={{marginTop: '20px'}}>Tech Stack: <br /> <span className='text-[#0099FF]'>{techStack}</span></h1>
           </div>
           <div>
-            <a target='_blank' rel='noopener noreferrer' href={anchor}><BsArrowUpRightSquareFill className='text-4xl hover:text-[#3b281d] text-[#FD853A]' /></a>
+            <a target='_blank' rel='noopener noreferrer' href={anchor}><BsArrowUpRightSquareFill className='text-4xl hover:text-[#0055AA] text-[#0099FF]' /></a>
           </div>
         </div>
       </div>

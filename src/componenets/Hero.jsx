@@ -30,7 +30,7 @@ const Hero = () => {
           {/* hero content */}
           <div className='relative'>
             <h1 className='text-center text-[3em] md:text-[75px] leading-[1em]'>I'm 
-              <span className='text-[#FD853A]'> <Typewritter delay={0.1} pauseTime={1000} words={['Joseph', "Abel", "Olayinka"]}/></span>, <br /> Full Stack Developer</h1>
+              <span className='text-[#0099FF]'> <Typewritter delay={0.1} pauseTime={1000} words={['Joseph', "Abel", "Olayinka"]}/></span>, <br /> Full Stack Developer</h1>
             <img className='absolute w-[50px] md:w-auto bottom-[-40%] left-[-50px]' src={Vector2} alt="decorative vector" />
           </div>
           {/* hero description */}
@@ -53,7 +53,7 @@ const Hero = () => {
                     onClick={handlePortfolioClick}
                     onMouseEnter={() => setHoveredBtn('portfolio')}
                     onMouseLeave={() => setHoveredBtn(null)}
-                    className={`flex items-center gap-2 bg-[#FD853A] rounded-[60px] cursor-pointer text-white ${hoveredBtn === 'portfolio' ? 'bg-[#ffffff00]' : ''}`}>
+                    className={`flex items-center gap-2 bg-[#0099FF] rounded-[60px] cursor-pointer text-white ${hoveredBtn === 'portfolio' ? 'bg-[#ffffff00]' : ''}`}>
                     <span>Portfolio</span>
                     <img width={'17px'} src={Arrow} alt="arrow icon" />
                   </button>
@@ -62,7 +62,7 @@ const Hero = () => {
                     <button
                       onMouseEnter={() => setHoveredBtn('hire')}
                       onMouseLeave={() => setHoveredBtn(null)}
-                      className={`flex items-center gap-2 rounded-[60px] text-white cursor-pointer transition-all ease-in-out duration-200 ${hoveredBtn === 'hire' ? 'bg-[#FD853A]' : ''}`}>
+                      className={`flex items-center gap-2 rounded-[60px] text-white cursor-pointer transition-all ease-in-out duration-200 ${hoveredBtn === 'hire' ? 'bg-[#0099FF]' : ''}`}>
                       <span>Hire</span>
                       {hoveredBtn === 'hire' && <img width={'17px'} src={Arrow} alt="arrow icon" />}
                     </button>

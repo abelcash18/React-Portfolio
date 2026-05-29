@@ -12,7 +12,7 @@ import Zeezat from '../assets/zeezat.png'
 const Project = () => {
   return (
     <div className='py-[5%] px-[7%] About flex flex-col gap-4 items-center'>
-      <h1 className='text-4xl font-bold text-center'>My <span className='text-[#FD853A]'>Project</span></h1>
+      <h1 className='text-4xl font-bold text-center'>My <span className='text-[#0099FF]'>Project</span></h1>
 
       <div className='w-full grid gap-2 md:gap-5'>
         <FolioCard 
