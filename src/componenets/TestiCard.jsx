@@ -1,11 +1,10 @@
-import React from 'react'
 import QuoteDown from '../assets/quote-down.png'
 
 
 
 const TestiCard = ({ testiAuthor, testiCompany, testtiImg, testiWord, testiStar }) => {
   return (
-    <div style={{padding: '20px', backdropFilter: 'blur(10px)'}} className='flex flex-col gap-5 justify-between rounded-[20px] bg-[rgba(255,255,255,0.14)] text-white'>
+    <div className='flex flex-col gap-5 justify-between rounded-[20px] bg-[rgba(255,255,255,0.14)] text-white p-5 backdrop-blur-[10px]'>
       <div className='flex w-full items-center justify-center'>
         <div className='flex w-full flex-col gap-2'>
           <div className='flex gap-2 items-center'>

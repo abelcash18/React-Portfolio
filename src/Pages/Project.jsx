@@ -1,4 +1,4 @@
-import React from 'react'
+// Project page
 import FolioCard from '../componenets/FolioCard'
 import Webapp from '../assets/web-app.png'
 import Ally from '../assets/AiAlly.png'
@@ -11,7 +11,7 @@ import Zeezat from '../assets/zeezat.png'
 
 const Project = () => {
   return (
-    <div style={{padding: '5% 7%'}} className='About flex flex-col gap-4 items-center'>
+    <div className='py-[5%] px-[7%] About flex flex-col gap-4 items-center'>
       <h1 className='text-4xl font-bold text-center'>My <span className='text-[#FD853A]'>Project</span></h1>
 
       <div className='w-full grid gap-2 md:gap-5'>

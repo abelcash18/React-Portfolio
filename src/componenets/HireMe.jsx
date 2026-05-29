@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Hireme from '../assets/hireMe.png'
 import { motion } from 'framer-motion'
 
@@ -22,7 +22,7 @@ const HireMe = () => {
     <div className='hireMe bg-[#F2F4F7] rounded-[50px]'>
       <div className='grid gap-4 text-center md:text-left justify-center md:grid-cols-[1fr_1fr] items-center'>
         <div className='md:h-[500px] object-fit-cover'>
-          <img className='h-full' src={Hireme} alt="" />
+          <img className='h-full' src={Hireme} alt="hire me banner" />
         </div>
         <div className='flex flex-col gap-6 md:w-3/4'>
           <h1 className='text-4xl font-bold text-[#1D2939]'>Why<span className='text-[#FD853A]'> Hire me</span>?</h1>
@@ -38,8 +38,8 @@ const HireMe = () => {
             </span>
           </div>
           <span>
-            <a target='_blank' href="https://wa.me/2349056424816">
-              <button style={{padding: '15px 30px'}} className='border-1 cursor-pointer hover:bg-[#151515] transition-all hover:text-white border-[#151515] rounded-[20px]'>Hire me</button>
+            <a target='_blank' rel='noopener noreferrer' href="https://wa.me/2349056424816">
+              <button className='border border-[#151515] rounded-[20px] cursor-pointer hover:bg-[#151515] transition-all hover:text-white px-8 py-3.5'>Hire me</button>
             </a>
           </span>
         </div>

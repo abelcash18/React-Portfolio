@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Center from '../assets/centerPatter.png'
 import { motion } from 'framer-motion'
 
@@ -65,7 +65,7 @@ const Work = () => {
                 {/* third */}
 
                 <div className='absolute top-[10%] md:top-[10%] left-[-19%] md:left-[45%] centerImg'>
-                  <img src={Center} className='relative h-[700px] w-[55px] md:h-[400px] md:w-[50px]' alt="" />
+                  <img src={Center} className='relative h-[700px] w-[55px] md:h-[400px] md:w-[50px]' alt="decorative pattern" />
                 </div>
               </div>
             </div>

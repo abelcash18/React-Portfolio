@@ -1,4 +1,4 @@
-import React from 'react'
+// Contact page
 import { motion } from 'framer-motion'
 import { FaLinkedin, FaFacebookSquare, FaGithubSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
@@ -20,9 +20,9 @@ const Contact = () => {
       whileInView="visible"
       viewport={{ once: true, amount: 0.5 }}
     >
-    <div style={{padding: '5% 7%'}} className='About flex flex-col gap-4 items-center'>
+    <div className='py-[5%] px-[7%] About flex flex-col gap-4 items-center'>
       <h1 className='text-4xl font-bold text-center'>Contact <span className='text-[#FD853A]'>Me</span></h1>
-      <div style={{marginTop: '40px'}} className='grid md:grid-cols-[1fr_1fr] items-start justify-center md:flex-row md:gap-[5em] gap-4'>
+      <div className='grid md:grid-cols-[1fr_1fr] items-start justify-center gap-4 md:gap-[5em]'>
         <div className='w-full flex text-center md:text-left flex-col gap-[3em]'>
           <h1 className='text-3xl text-[#FD853A] font-bold'>Let's work together</h1>
           <p className='leading-[30px]'>
@@ -38,10 +38,10 @@ const Contact = () => {
         </div>
         <div className='w-full'>
           <form className='w-full flex flex-col gap-4' action="">
-            <input type="text" placeholder='Name' style={{padding: '20px'}} className='bg-[#e6e6e6] focus:outline-1 focus:border-[#FD853A] w-full border-0 text-black'/>
-            <input type="text" placeholder='Email' style={{padding: '20px'}} className='bg-[#e6e6e6] w-full border-0 text-black'/>
-            <textarea name="" rows='7' style={{padding: '20px', resize: 'none'}} placeholder='Type your message here' className='bg-[#e6e6e6] w-full border-0 text-black' id=""></textarea>
-            <button style={{padding: '20px'}} className='bg-[#FD853A] block cursor-pointer' type='button'>Submit</button>
+            <input type="text" placeholder='Name' className='bg-[#e6e6e6] focus:outline-1 focus:border-[#FD853A] w-full border-0 text-black p-5' />
+            <input type="text" placeholder='Email' className='bg-[#e6e6e6] w-full border-0 text-black p-5' />
+            <textarea name="" rows='7' placeholder='Type your message here' className='bg-[#e6e6e6] w-full border-0 text-black p-5 resize-none' id=""></textarea>
+            <button className='bg-[#FD853A] block cursor-pointer p-5' type='button'>Submit</button>
           </form>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+// About page
 import Button from '../componenets/Button'
 import Human from '../assets/hireMe.png'
 import { motion } from 'framer-motion'
@@ -20,7 +20,7 @@ const About = () => {
       whileInView="visible"
       viewport={{ once: true, amount: 0.5 }}
     >
-    <div style={{padding: '5% 10%'}} className='About flex flex-col gap-4 items-center'>
+    <div className='py-[5%] px-[10%] About flex flex-col gap-4 items-center'>
       <h1 className='text-4xl font-bold text-center'>About <span className='text-[#FD853A]'>Me</span></h1>
 
       <div className='grid md:grid-cols-[1fr_1fr] items-center justify-center md:flex-row gap-4'>
@@ -30,10 +30,10 @@ const About = () => {
           <p>
             Hi, I am Joseph Abel Olayinka,  .
           </p>
-          <Button style={{padding: '10px 20px', borderRadius: '10px'}} BtnText='Hire me' />
+          <Button className='px-5 py-2.5 rounded-[10px]' BtnText='Hire me' />
         </div>
         <div className='w-full self-end'>
-          <img className='w-full rotate-5' src={Human} alt="" />
+          <img className='w-full rotate-5' src={Human} alt="Profile picture" />
         </div>
       </div>
     </div>

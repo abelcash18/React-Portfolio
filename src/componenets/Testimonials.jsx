@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import TestiCard from './TestiCard'
 import ProfileImage from '../assets/profileImg.png'
 import Star from '../assets/star.png'

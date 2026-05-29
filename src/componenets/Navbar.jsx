@@ -1,4 +1,4 @@
-import React, {useRef, useEffect, useState} from 'react'
+import { useState } from 'react'
 import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import MyLogo from '../assets/favicon-32x32.png'
@@ -58,7 +58,7 @@ const Navbar = () => {
           </div>
       </div>
       <div className={`${isOpen ? 'open' : 'overflow-hidden navbarMobile'} absolute mobile-link md:hidden bg-[#fd853aab] backdrop-blur-md shadow-md rounded-[10px] z-10 top-[120%] left-0 block w-full`}>
-          <div style={{padding: '20px'}} className='flex flex-col gap-3'>
+          <div className='flex flex-col gap-3 p-5'>
             <NavLink className={({ isActive }) => isActive ? 'link active' : 'link'} to='/'>Home</NavLink>
             <NavLink className={({ isActive }) => isActive ? 'link active' : 'link'} to='/about'>About</NavLink>
             <NavLink className={({ isActive }) => isActive ? 'link active' : 'link'} to='/services'>Service</NavLink>

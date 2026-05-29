@@ -1,5 +1,3 @@
-import React from 'react'
-import circle from './assets/circle.png'
 import Navbar from './componenets/Navbar'
 import Awesome from './componenets/Awesome'
 import Frame from './componenets/Frame'

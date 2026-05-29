@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import Button from './Button'
 import Sms from '../assets/sms.png'
@@ -48,7 +48,7 @@ const Awesome = () => {
       <div style={{ padding: '10px', marginTop: '20px' }} className='border-1 rounded-[60px] border-[#E4E7EC] md:w-2/4'>
         <div className='w-full flex items-center'>
           <div className='w-[64px] h-[58px] bg-[#FFEAD5] rounded-[50px] flex flex-col items-center justify-center'>
-            <img src={Sms} alt="" />
+            <img src={Sms} alt="email icon" />
           </div>
           <input
             style={{ padding: '10px 20px' }}
@@ -58,14 +58,14 @@ const Awesome = () => {
             value={userMessage}
             onChange={(e) => setUserMessage(e.target.value)}
           />
-          <Button onClick={sendMail} style={{ padding: '10px 35px', transition: '0.2s ease-in-out' }} BtnText='Send' />
+          <Button onClick={sendMail} className='px-[35px] py-2.5' BtnText='Send' />
         </div>
       </div>
 
-      <div style={{ marginTop: '10px' }} className='flex flex-col md:flex-row md:w-2/4 text-[14px] justify-between items-center'>
-        <span className='flex items-center gap-1'><img src={oneStar} alt="" /> <span>4.9/5 Average Ratings</span></span>
-        <span className='flex items-center gap-1'><img src={Award} alt="" /> <span>25+ Winning Awards</span></span>
-        <span className='flex items-center gap-1'><img src={Shield} alt="" /> <span>Certified Software Developer</span></span>
+      <div className='flex flex-col md:flex-row md:w-2/4 text-[14px] justify-between items-center mt-2.5'>
+        <span className='flex items-center gap-1'><img src={oneStar} alt="rating" /> <span>4.9/5 Average Ratings</span></span>
+        <span className='flex items-center gap-1'><img src={Award} alt="award" /> <span>25+ Winning Awards</span></span>
+        <span className='flex items-center gap-1'><img src={Shield} alt="shield" /> <span>Certified Software Developer</span></span>
       </div>
     </motion.div>
   )

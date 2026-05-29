@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
-const Typewritter = ({ words, delay = 0.1, pauseTime = 1000 }) => {
+const Typewriter = ({ words, delay = 0.1, pauseTime = 1000 }) => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0)
   const [displayedText, setDisplayedText] = useState('')
   const [isDeleting, setIsDeleting] = useState(false)
@@ -32,12 +32,12 @@ const Typewritter = ({ words, delay = 0.1, pauseTime = 1000 }) => {
   }, [displayedText, isDeleting, currentWord, delay, pauseTime, words])
 
   return (
-    <span style={{ display: 'inline-flex', alignItems: 'center' }}>
+    <span className='inline-flex items-center'>
       <AnimatePresence>
         {displayedText.split('').map((letter, index) => (
           <motion.span
             key={index}
-            initial={{ opacity: 0, y: -5 }}
+            initial={{ opacity: 0, y: -1.25 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0 }}
           >
@@ -45,25 +45,20 @@ const Typewritter = ({ words, delay = 0.1, pauseTime = 1000 }) => {
           </motion.span>
         ))}
       </AnimatePresence>
-      <span className="blinking-cursor">|</span>
+      <span className='blinking-cursor inline-block ml-0.5 font-light animate-blink'>|</span>
 
-      {/* Style definition for blinking cursor */}
       <style jsx>{`
-        .blinking-cursor {
-          display: inline-block;
-          margin-left: 2px;
-          font-weight: 300;
-          animation: blink 1s step-end infinite;
-        }
-
         @keyframes blink {
           50% {
             opacity: 0;
           }
+        }
+        .animate-blink {
+          animation: blink 1s step-end infinite;
         }
       `}</style>
     </span>
   )
 }
 
-export default Typewritter
+export default Typewriter

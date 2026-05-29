@@ -1,4 +1,4 @@
-import React from 'react'
+// Workcard component (unused placeholder)
 
 const Workcard = () => {
   return (

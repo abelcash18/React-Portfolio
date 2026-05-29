@@ -1,4 +1,4 @@
-import React from 'react'
+// Home page
 import Hero from '../componenets/Hero'
 import Myservices from '../componenets/Myservices'
 import Work from '../componenets/Work'

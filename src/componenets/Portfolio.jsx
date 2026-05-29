@@ -1,4 +1,4 @@
-import React from 'react'
+// Portfolio component
 import Button from './Button'
 import FolioCard from '../componenets/FolioCard'
 import { motion } from 'framer-motion'

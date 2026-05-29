@@ -1,4 +1,4 @@
-import React from 'react'
+// Footer component
 import Arrow from '../assets/upright.png'
 import Logo from '../assets/newLogo.png'
 import Filled from '../assets/filled.png'
@@ -34,15 +34,15 @@ const Footer = () => {
       <div className='flex w-full flex-col gap-[1em]'>
 
         {/* Top section */}
-        <div style={{ padding: '0 0 40px 0' }} className='w-full flex gap-4 md:gap-0 flex-col md:flex-row md:items-center justify-between border-[#475467] border-b'>
+        <div className='w-full flex gap-4 md:gap-0 flex-col md:flex-row md:items-center justify-between border-[#475467] border-b pb-10'>
           <h1 className='text-4xl font-bold text-white'>Let's Connect there</h1>
           <span>
-            <a target='_blank' href="https://wa.me/2349056424816">
+            <a target='_blank' rel='noopener noreferrer' href="https://wa.me/2349056424816">
               <button
-                style={{ padding: '10px 25px', transition: '0.2s ease-in-out' }}
-                className='flex items-center gap-2 bg-[#FD853A] hover:bg-[transparent] border-1 border-[#FD853A] rounded-[60px] cursor-pointer text-white'>
+                className='flex items-center gap-2 bg-[#FD853A] hover:bg-transparent border border-[#FD853A] rounded-[60px] cursor-pointer text-white px-6 py-2.5 transition-all'
+                >
                 <span>Hire Me</span>
-                <img width={'17px'} src={Arrow} alt="" />
+                <img width={'17px'} src={Arrow} alt="arrow" />
               </button>
             </a>
           </span>
@@ -60,10 +60,10 @@ const Footer = () => {
               exciting opportunities, freelance work, or even just sharing ideas over coffee (virtual or real ☕).
             </p>
             <div className='socialLink flex gap-3'>
-              <a href="https://www.facebook.com/OkikiolaFakorede01" className='text-3xl text-[#FD853A] transition-all hover:text-[#583c2a]'><FaFacebookSquare /></a>
-              <a href="" className='text-3xl text-[#FD853A] transition-all hover:text-[#583c2a]'><FaLinkedin /></a>
-              <a href="https://x.com/conquer_create" className='text-3xl text-[#FD853A] transition-all hover:text-[#583c2a]'><FaSquareXTwitter /></a>
-              <a href="https://github.com/Holuwaconquer" className='text-3xl text-[#FD853A] transition-all hover:text-[#583c2a]'><FaGithubSquare /></a>
+            <a target='_blank' rel='noopener noreferrer' href="https://www.facebook.com/OkikiolaFakorede01" className='text-3xl text-[#FD853A] transition-all hover:text-[#583c2a]'><FaFacebookSquare /></a>
+            <a target='_blank' rel='noopener noreferrer' href="" className='text-3xl text-[#FD853A] transition-all hover:text-[#583c2a]'><FaLinkedin /></a>
+            <a target='_blank' rel='noopener noreferrer' href="https://x.com/conquer_create" className='text-3xl text-[#FD853A] transition-all hover:text-[#583c2a]'><FaSquareXTwitter /></a>
+            <a target='_blank' rel='noopener noreferrer' href="https://github.com/Holuwaconquer" className='text-3xl text-[#FD853A] transition-all hover:text-[#583c2a]'><FaGithubSquare /></a>
             </div>
           </div>
 
@@ -83,7 +83,7 @@ const Footer = () => {
             <div style={{ marginTop: '10px' }}>
               <h1>+2349056424816</h1>
               <h1>josephabel540@gmail.com</h1>
-              <h1><a className='hover:text-[#FD853A]' target='_blank' href="https://github.com/abelcash18">Github Profile</a></h1>
+              <h1><a className='hover:text-[#FD853A]' target='_blank' rel='noopener noreferrer' href="https://github.com/abelcash18">Github Profile</a></h1>
             </div>
           </div>
 
@@ -97,7 +97,7 @@ const Footer = () => {
                 style={{ padding: '10px' }}
               />
               <button style={{ padding: '10px' }} className='bg-[#FD853A] hover:bg-[hsl(17,98%,61%)] cursor-pointer rounded-br-[10px] rounded-tr-[10px]'>
-                <img src={Filled} alt="" />
+                <img src={Filled} alt="decorative element" />
               </button>
             </div>
           </div>
